@@ -1,4 +1,5 @@
 # From https://github.com/microsoft/devcenter-examples
+
 $schema: 1.0
 tasks:
   - name: winget

@@ -1,0 +1,35 @@
+$schema: "1.0"
+name: "devbox-customization"
+tasks:
+  - name: winget
+    parameters:
+      package: GitHub.GitHubDesktop 
+  - name: winget
+    parameters:
+      package: Microsoft.VisualStudioCode
+  - name: winget
+    parameters:
+      package: CoreyButler.NVMforWindows
+      runAsUser: True
+  - name: winget
+    parameters:
+      package: OpenJS.NodeJS
+      runAsUser: True
+  - name: git-clone
+    description: Clone this repository into C:\Workspaces
+    parameters:
+      repositoryUrl: https://github.com/OrchardCMS/OrchardCore.git
+      directory: C:\Workspaces
+  - name: winget
+    parameters:
+      package: Yarn.Yarn
+  - name: powershell
+    parameters:
+      command: |
+        # Install Hyper-V
+        Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -NoRestart
+  - name: winget
+    parameters:
+      downloadUrl: 'https://raw.githubusercontent.com/microsoft/devcenter-examples/main/devbox-accessibility/DSCSamples/WindowsAccessibility.dsc.yaml'
+      configurationFile: 'C:\WinGetConfig\WindowsAccessibility.dsc.yaml'
+      runAsUser: true

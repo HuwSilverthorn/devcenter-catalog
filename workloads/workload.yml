@@ -3,9 +3,6 @@ name: "devbox-customization"
 tasks:
   - name: winget
     parameters:
-      package: GitHub.GitHubDesktop 
-  - name: winget
-    parameters:
       package: Microsoft.VisualStudioCode
   - name: winget
     parameters:

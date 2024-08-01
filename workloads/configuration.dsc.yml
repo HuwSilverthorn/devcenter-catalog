@@ -28,4 +28,11 @@ properties:
       settings:
         id: OpenJS.NodeJS
         source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Github Dekstop
+        allowPrerelease: true
+      settings:
+        id: GitHub.GitHubDesktop
+        source: winget
   configurationVersion: 0.2.0

@@ -30,6 +30,6 @@ tasks:
         Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -NoRestart
   - name: winget
     parameters:
-      downloadUrl: 'https://raw.githubusercontent.com/microsoft/devcenter-examples/main/devbox-accessibility/DSCSamples/WindowsAccessibility.dsc.yaml'
+      downloadUrl: 'https://raw.githubusercontent.com/HuwSilverthorn/devcenter-catalog/main/workloads/configuration.dsc.yml'
       configurationFile: 'C:\WinGetConfig\WindowsAccessibility.dsc.yaml'
       runAsUser: true

@@ -31,5 +31,5 @@ tasks:
   - name: winget
     parameters:
       downloadUrl: 'https://raw.githubusercontent.com/HuwSilverthorn/devcenter-catalog/main/workloads/configuration.dsc.yml'
-      configurationFile: 'C:\WinGetConfig\WindowsAccessibility.dsc.yaml'
+      configurationFile: 'C:\WinGetConfig\configuration.dsc.yaml'
       runAsUser: true

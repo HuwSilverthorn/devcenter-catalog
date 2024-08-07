@@ -27,6 +27,6 @@ tasks:
         Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -NoRestart
   - name: winget
     parameters:
-      downloadUrl: 'https://raw.githubusercontent.com/HuwSilverthorn/devcenter-catalog/main/workloads/configuration.dsc.yaml'
+      downloadUrl: 'https://raw.githubusercontent.com/HuwSilverthorn/devcenter-catalog/main/workloads/Engineering/configuration.dsc.yaml'
       configurationFile: 'C:\WinGetConfig\configuration.dsc.yaml'
       runAsUser: true

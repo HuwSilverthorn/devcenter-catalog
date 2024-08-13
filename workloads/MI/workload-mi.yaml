@@ -3,7 +3,7 @@ name: "devbox-customization"
 tasks:
   - name: winget
     parameters:
-      package: vscode
-  - name: winget
+      package: Microsoft.VisualStudioCode
+  - name: choco
     parameters:
       package: tableau-desktop

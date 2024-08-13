@@ -20,6 +20,10 @@ tasks:
   - name: winget
     parameters:
       package: Yarn.Yarn
+  - name: winget
+    parameters:
+      package: GitHub.GitHubDesktop
+      runAsUser: True
   - name: powershell
     parameters:
       command: |

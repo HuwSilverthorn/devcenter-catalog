@@ -1,9 +1,9 @@
 $schema: "1.0"
 name: "devbox-customization"
 tasks:
-  - name: winget
+  - name: choco
     parameters:
-      package: Microsoft.VisualStudioCode
-  - name: winget
+      package: vscode
+  - name: choco
     parameters:
-      package: Tableau.Desktop
+      package: tableau-desktop

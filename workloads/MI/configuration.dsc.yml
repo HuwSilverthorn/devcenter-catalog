@@ -15,11 +15,11 @@ properties:
       settings:
         id: Microsoft.VisualStudioCode
         source: winget
-    - resource: Microsoft.WinGet.DSC/WinGetPackage
+    - resource: chocolatey/ChocolateyPackage
       directives:
         description: Install Tableau
-        allowPrerelease: true
       settings:
-        id: Tableau.Desktop
-        source: winget
+        Ensure: present
+        Name: Tableau.Desktop
+        Version: latest
   configurationVersion: 0.2.0

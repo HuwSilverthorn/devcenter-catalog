@@ -20,6 +20,5 @@ properties:
         description: Install Tableau
       settings:
         Ensure: present
-        Name: Tableau.Desktop
-        Version: latest
+        Name: tableau-desktop
   configurationVersion: 0.2.0
